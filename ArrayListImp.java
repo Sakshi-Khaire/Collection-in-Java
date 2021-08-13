@@ -85,7 +85,7 @@ public class ArrayListImp {
         /**
          * Printing using each loop
          */
-        System.out.println("\nList : printting using for-each loop");
+        System.out.println("\nList : printing using for-each loop");
         for (String names : list) {
             System.out.println(names);
         }
