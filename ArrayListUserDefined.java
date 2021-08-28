@@ -7,10 +7,20 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 
+/**
+ * 
+ * created a user defined class Student which implements serializable
+ */
+
 class Student implements Serializable {
     int rollNo;
     String name;
     int age;
+
+    /**
+     * 
+     * parameterized constructor
+     */
 
     Student(int rollNo, String name, int age) {
         this.rollNo = rollNo;
@@ -20,15 +30,30 @@ class Student implements Serializable {
 }
 
 public class ArrayListUserDefined {
+
+    /**
+     * 
+     * main method
+     */
     public static void main(String[] args) {
         Student s1 = new Student(1, "Adhira", 16);
         Student s2 = new Student(2, "Rajat", 24);
         Student s3 = new Student(3, "Sakshi", 23);
 
+        /**
+         * 
+         * initialization of array list
+         */
+
         ArrayList<Student> stuList = new ArrayList<Student>();
         stuList.add(s1);
         stuList.add(s2);
         stuList.add(s3);
+
+        /**
+         * 
+         * try and catch function to catch a exception if found any
+         */
 
         try {
             FileOutputStream fos = new FileOutputStream(".//Java//collection//StudentData.txt");

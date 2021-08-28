@@ -57,6 +57,15 @@ class Employee {
     private String phNo;
     private int empAge;
 
+    /**
+     * Parameterize Constructor for Employee
+     * 
+     * @param addr
+     * @param empId
+     * @param empName
+     * @param phNo
+     * @param empAge
+     */
     Employee(Address addr, int empId, String empName, String phNo, int empAge) {
         this.addr = addr;
         this.empId = empId;

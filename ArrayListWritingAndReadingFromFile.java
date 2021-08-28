@@ -10,12 +10,25 @@ import java.util.ArrayList;
 public class ArrayListWritingAndReadingFromFile {
     private static Object readObject;
 
+    /**
+     * main method
+     * @param args
+     */
+
     public static void main(String[] args) {
+
+        /**
+         * initialization of arrayList
+         */
         ArrayList<String> al = new ArrayList<String>();
         al.add("Sakshi");
         al.add("Rajat");
         al.add("Riya");
         al.add("Pari");
+
+        /**
+         * try and catch function to catch the exception if there is any while executing the program
+         */
 
         try {
             FileOutputStream fos = new FileOutputStream(".//Java//collection//ObjectStoringFile.txt");
